@@ -11,7 +11,7 @@ public class Hooks {
         driverFactory.openBrowser();
     }
     @After
-    public void tearDown(){
+    public void tearDown() throws InterruptedException {
         driverFactory.closeBrowser();
     }
 }

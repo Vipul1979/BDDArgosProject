@@ -14,25 +14,23 @@ public class HomePage extends DriverFactory {
     @FindBy(className = "_1gqeQ")
     WebElement searchButton;
 
-    @FindBy(className = "search-title__term")
-    WebElement pumaProduct;
-
-    public void seachBoxSendkey(){
+    public void seachBoxSendkey() throws InterruptedException {
+        Thread.sleep(1000);
         searchBox.sendKeys("puma");
     }
     public void searchButtonClick() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         searchButton.click();
     }
-    public void homePageAssert() throws InterruptedException {
-        Thread.sleep(2000);
-        String actualHomePageURL = driver.getCurrentUrl();
-        Assert.assertThat(actualHomePageURL, Matchers.containsString("argos.co.uk"));
-    }
-    public void pumaAssertion() throws InterruptedException {
-        Thread.sleep(2000);
-        String actualPumaAssertion = pumaProduct.getText();
-        Assert.assertThat(actualPumaAssertion,Matchers.containsString("puma"));
-    }
+//    public void homePageAssert() throws InterruptedException {
+//        Thread.sleep(2000);
+//        String actualHomePageURL = driver.getCurrentUrl();
+//        Assert.assertThat(actualHomePageURL, Matchers.containsString("argos.co.uk"));
+//    }
+//    public void pumaAssertion() throws InterruptedException {
+//        Thread.sleep(2000);
+//        String actualPumaAssertion = pumaProduct.getText();
+//        Assert.assertThat(actualPumaAssertion,Matchers.containsString("puma"));
+//    }
 
 }
