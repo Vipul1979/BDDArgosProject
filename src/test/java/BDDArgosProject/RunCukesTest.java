@@ -6,8 +6,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\Resources\\HomePage.feature",
-        tags = {"@smoke"})
+@CucumberOptions(features = "src/test/Resources/HomePage.feature")
 
 public class RunCukesTest {
 }
