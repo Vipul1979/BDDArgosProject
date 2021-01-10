@@ -16,7 +16,7 @@ public class DriverFactory {
    public void openBrowser(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://www.argos.co.uk/");
+        driver.get("https://www.argos.co.uk/search/nike/price:%C2%A35-%252D-%C2%A310/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
    }
