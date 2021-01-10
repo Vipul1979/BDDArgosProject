@@ -4,4 +4,5 @@ Feature: Argos website homepage functionality
     Given user is on argos homepage
     When user search puma
     Then user can see all puma product
-    # hello
+   #all done
+
