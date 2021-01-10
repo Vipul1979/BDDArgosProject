@@ -5,3 +5,4 @@ Feature: Argos website homepage functionality
     When user search puma
     Then user can see all puma product
     # hello
+    # Please remove hello word
