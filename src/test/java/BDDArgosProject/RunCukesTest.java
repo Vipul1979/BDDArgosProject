@@ -10,6 +10,6 @@ import org.junit.runner.RunWith;
 /* @CucumberOptions(features = "src/test/Resources/HomePage.feature",
 plugin = {"html:target/cucumber-html-report",
 "json:target/cucumber-json-report.json"})*/
-
+//please committe this
 public class RunCukesTest {
 }
